@@ -1,0 +1,1 @@
+[{"title":"KitchenAid","price":74999,"thumbnail":"https://images.homedepot-static.com/productImages/3f7e3a5d-0a60-4d20-a365-3e1f0414bf4a/svn/silver-kitchenaid-stand-mixers-ksm75sl-64_1000.jpg","id":1},{"title":"Cafetera Nespresso Krups Essenza","price":19999,"thumbnail":"https://http2.mlstatic.com/D_NQ_NP_2X_675732-MLA32619197440_102019-F.webp","id":2}]
