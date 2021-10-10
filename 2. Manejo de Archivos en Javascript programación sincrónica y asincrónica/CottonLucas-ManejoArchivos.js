@@ -5,13 +5,13 @@ class Contenedor {
         this.archivo = archivo
     }
 
-    async save(title, price, thumbnail){
+    async save(new_product){
         try {
             const products = await fs.promises.readFile(this.archivo,'utf-8')
             if( products === ""){
                 let ps = []
                 const new_id = 1
-                let new_product = {title, price, thumbnail, id: new_id }
+                new_product['id'] = new_id
                 ps.push(new_product)
                 let content = JSON.stringify(ps)
                 content = await fs.promises.writeFile(this.archivo,content)
@@ -21,7 +21,7 @@ class Contenedor {
                 const parse_products = JSON.parse(products)
                 const id_max = Math.max(...parse_products.map(p => p.id))
                 const new_id = id_max + 1
-                let new_product = {title, price, thumbnail, id: new_id }
+                new_product['id'] = new_id
                 parse_products.push(new_product)
                 let content = JSON.stringify(parse_products)
                 content = await fs.promises.writeFile(this.archivo,content)
@@ -91,8 +91,8 @@ class Contenedor {
 
 
 
-const c = new Contenedor ('./2. Manejo de Archivos en Javascript programación sincrónica y asincrónica/productos.txt')
-//c.save('Cafetera Nespresso Krups Essenza',19999,'https://http2.mlstatic.com/D_NQ_NP_2X_675732-MLA32619197440_102019-F.webp').then((new_id) => console.log(new_id))
+const c = new Contenedor ('./Coder-House/2. Manejo de Archivos en Javascript programación sincrónica y asincrónica/productos.txt')
+//c.save({title:'Cafetera Nespresso Krups Essenza',price:19999,thumbnail:'https://http2.mlstatic.com/D_NQ_NP_2X_675732-MLA32619197440_102019-F.webp'}).then(new_id => console.log(new_id))
 //c.getById(2).then((p) => p.forEach(console.log))
 c.getAll().then((p) => p.forEach(console.log))
 //c.deleteById(2)
