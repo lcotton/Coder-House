@@ -1,0 +1,32 @@
+extends inicio 
+
+block formulario
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title  Productos EJS 
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' integrity='sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l' crossorigin='anonymous')
+    body 
+        .container.mt-3
+            .jumbotron
+                h1(style='color:blue;') Ingrese Producto
+                br
+                form(action='/productos' method='post')
+                    .form-group
+                        label(for='nombre')
+                            b Nombre
+                        input#nombre.form-control(type='text' name='nombre')
+                    .form-group
+                        label(for='precio')
+                            b Precio
+                        input#precio.form-control(type='number' name='precio')
+                    .form-group
+                        label(for='fotoUrl')
+                            b Foto URL
+                        input#fotoUrl.form-control(type='url' name='fotoUrl')
+                    button.btn.btn-success.mt-3.mb-5 Enviar
+                button#myButton.btn.btn-secondary(onclick='myProducts()') View Products
+                    script(type='text/javascript').
+                        document.getElementById("myButton").onclick = function () {
+                            location.href = "/productos";
+                            };

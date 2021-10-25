@@ -16,8 +16,12 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs')
 app.set('views', './views')
 
-app.get('/productos', (req,res) => {
+app.get('/', (req,res) => {
   res.render('formulario',{layout: 'inicio'})
+})
+
+app.get('/productos', (req,res) => {
+  res.render('historial', {productos,hayProductos:productos.length>0});
 })
 
 app.post('/productos', (req, res) => {

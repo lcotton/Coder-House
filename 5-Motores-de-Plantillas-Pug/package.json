@@ -1,8 +1,8 @@
 {
-  "name": "plantillas-handlebar",
+  "name": "plantillas-pug",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.js",
+  "main": "main.js",
   "scripts": {
     "start": "node src/main.js"
   },
@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.4"
+    "pug": "^3.0.2"
   }
 }
