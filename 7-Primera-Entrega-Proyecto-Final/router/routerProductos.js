@@ -68,7 +68,7 @@ routerProductos.post("/", async (req, res) => {
   } else {
     return res.json({
       error: "-1",
-      descripcion: "ruta '/api/productos' método 'POST' no autorizada",
+      descripcion: `ruta '/api/productos' método ${req.method} no autorizada`,
     });
   }
 });
@@ -104,7 +104,7 @@ routerProductos.put("/:id", async (req, res) => {
   } else {
     return res.json({
       error: "-1",
-      descripcion: `ruta '/api/productos/${id}' método 'PUT' no autorizada`,
+      descripcion: `ruta '/api/productos/${id}' método ${req.method} no autorizada`,
     });
   }
 });
@@ -134,7 +134,7 @@ routerProductos.delete("/:id", async (req, res) => {
   } else {
     return res.json({
       error: "-1",
-      descripcion: `ruta '/api/productos/${id}' método 'DELETE' no autorizada`,
+      descripcion: `ruta '/api/productos/${id}' método ${req.method} no autorizada`,
     });
   }
 });
