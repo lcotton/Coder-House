@@ -1,0 +1,11 @@
+<div>
+    {{#each chats}}
+    <span style="color:blue"><b>{{this.author.id}}</b></span>
+    <span>[</span>
+    <span style="color:brown">{{this.timestamp}}</span>
+    <span>] : </span>
+    <span style="color:green"><i>{{this.text}}</i></span>
+    <span><img src= {{this.author.avatar}} alt="" width="64" height="64"></span>
+    <br>
+    {{/each}}
+</div>

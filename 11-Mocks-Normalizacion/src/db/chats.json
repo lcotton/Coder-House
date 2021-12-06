@@ -1,0 +1,18 @@
+{
+  "id": "chat",
+  "mensajes": [
+    {
+      "id": "mensaje",
+      "author": {
+        "id": "lcotton@itba.edu.ar",
+        "nombre": "Lucas",
+        "apellido": "Cotton",
+        "edad": "27",
+        "alias": "lcotton",
+        "avatar": "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png"
+      },
+      "text": "Hola",
+      "timestamp": "6/12/2021 16:10:21"
+    }
+  ]
+}
