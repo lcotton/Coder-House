@@ -36,7 +36,6 @@ formAgregarMensaje.addEventListener("submit", (e) => {
   const fecha = new Date();
 
   const mensaje = {
-    id: "mensaje",
     author: {
       id: document.getElementById("id").value,
       nombre: document.getElementById("nombre").value,
@@ -54,25 +53,27 @@ formAgregarMensaje.addEventListener("submit", (e) => {
   formAgregarMensaje.reset();
 });
 
-// const authorSchema = new Normalizr.schema.Entity(
-//   "author",
-//   {},
-//   { idAttribute: "id" }
-// );
-// const messageSchema = new Normalizr.schema.Entity("mensajes", {
-//   author: authorSchema,
-// });
-// const chatSchema = new Normalizr.schema.Entity("chat", {
-//   mensajes: [messageSchema],
-// });
-
 socket.on("mensajes", manejarEventoMensajes);
 
 async function manejarEventoMensajes(chats) {
+  const authorSchema = new normalizr.schema.Entity(
+    "author",
+    {},
+    { idAttribute: "id" }
+  );
+  const messageSchema = new normalizr.schema.Entity("mensajes", {
+    author: authorSchema,
+  });
+  const chatSchema = new normalizr.schema.Entity("chat", {
+    mensajes: [messageSchema],
+  });
+  let denormalizedMessage = normalizr.denormalize(
+    chats.result,
+    chatSchema,
+    chats.entities
+  );
 
-  // let denormalizedMessage = Normalizr.denormalize(chats.result, chatSchema, chats.entities);
-
-  // denormalizedMessage =  denormalizedMessage.mensajes
+  const { mensajes } = denormalizedMessage;
 
   const recursoRemoto = await fetch("plantillas/historial-chats.hbs");
 
@@ -80,7 +81,18 @@ async function manejarEventoMensajes(chats) {
 
   const functionTemplate = Handlebars.compile(textoPlantilla);
 
-  const html = functionTemplate({ chats });
+  const html = functionTemplate({ mensajes });
 
   document.getElementById("chats").innerHTML = html;
+
+  const calculoCompresion =
+    JSON.stringify(denormalizedMessage).length - JSON.stringify(chats).length;
+  const porcentaje = parseInt(
+    (calculoCompresion / JSON.stringify(denormalizedMessage).length) * 100
+  );
+  if (porcentaje < 0) {
+    compresion.innerHTML = "No hay compresion al momento";
+  } else {
+    compresion.innerHTML = "Compresion: " + porcentaje + "%";
+  }
 }

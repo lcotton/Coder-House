@@ -13,17 +13,24 @@ class MensajesDaoFS {
     }
   }
 
-  async insertarMensaje (newMessage) {
-    const chats = await this.listarMensajes()
-    chats.mensajes.push(newMessage);
-    const content = JSON.stringify(chats);
+  async insertarMensaje(newMessage) {
+    const chats = await this.listarMensajes();
+    let content
+    if (chats.mensajes.length > 0) {
+      chats.mensajes.push(newMessage);
+      chats.mensajes[chats.mensajes.length - 1].id = chats.mensajes.length;
+      content = JSON.stringify(chats);
+    } else {
+      chats.mensajes.push(newMessage);
+      chats.mensajes[0].id = 1;
+      content = JSON.stringify(chats);
+    }
     try {
       return await fs.writeFile(this.ruta, content);
     } catch (error) {
       throw new Error(`Error al guardar: ${error}`);
     }
   }
-
 }
 
 export default MensajesDaoFS;

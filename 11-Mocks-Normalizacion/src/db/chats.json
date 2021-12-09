@@ -2,7 +2,7 @@
   "id": "chat",
   "mensajes": [
     {
-      "id": "mensaje",
+      "id": 1,
       "author": {
         "id": "lcotton@itba.edu.ar",
         "nombre": "Lucas",
@@ -12,7 +12,85 @@
         "avatar": "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png"
       },
       "text": "Hola",
-      "timestamp": "6/12/2021 16:10:21"
+      "timestamp": "9/12/2021 18:13:53"
+    },
+    {
+      "id": 2,
+      "author": {
+        "id": "lucas.cotton1@gmail.com",
+        "nombre": "Lucas",
+        "apellido": "Cotton",
+        "edad": "27",
+        "alias": "lcotton",
+        "avatar": "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+      },
+      "text": "Como estas?",
+      "timestamp": "9/12/2021 18:14:13"
+    },
+    {
+      "id": 3,
+      "author": {
+        "id": "lcotton@itba.edu.ar",
+        "nombre": "Lucas",
+        "apellido": "Cotton",
+        "edad": "27",
+        "alias": "lcotton",
+        "avatar": "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png"
+      },
+      "text": "Todo bien",
+      "timestamp": "9/12/2021 18:16:46"
+    },
+    {
+      "id": 4,
+      "author": {
+        "id": "lcotton@itba.edu.ar",
+        "nombre": "Lucas",
+        "apellido": "Cotton",
+        "edad": "27",
+        "alias": "lcotton",
+        "avatar": "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png"
+      },
+      "text": "Que buena entrega",
+      "timestamp": "9/12/2021 18:17:21"
+    },
+    {
+      "id": 5,
+      "author": {
+        "id": "lucas.cotton1@gmail.com",
+        "nombre": "Lucas",
+        "apellido": "Cotton",
+        "edad": "27",
+        "alias": "lcotton",
+        "avatar": "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+      },
+      "text": "Quedo bien",
+      "timestamp": "9/12/2021 18:19:21"
+    },
+    {
+      "id": 6,
+      "author": {
+        "id": "lya@gmail.com",
+        "nombre": "Laila",
+        "apellido": "Alfie",
+        "edad": "25",
+        "alias": "lya",
+        "avatar": "https://cdn1.iconfinder.com/data/icons/wamen-powah/32/wamen-01-512.png"
+      },
+      "text": "Sos un quejoso",
+      "timestamp": "9/12/2021 19:55:28"
+    },
+    {
+      "author": {
+        "id": "lucas.cotton1@gmail.com",
+        "nombre": "Lucas",
+        "apellido": "Cotton",
+        "edad": "27",
+        "alias": "lcotton",
+        "avatar": "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+      },
+      "text": "Soy Batman, me puedo quejar",
+      "timestamp": "9/12/2021 20:05:46",
+      "id": 7
     }
   ]
 }

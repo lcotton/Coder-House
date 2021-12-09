@@ -4,8 +4,7 @@ import { Server } from "socket.io";
 import { productosDao } from "./daos/productos/index.js";
 import { mensajesDao } from "./daos/mensajes/index.js";
 import { productosMocks } from "./daos/productos/ProductosMocks.js";
-import { normalize, denormalize, schema } from "normalizr";
-import util from "util";
+import { normalize, schema } from "normalizr";
 
 const app = express();
 const httpServer = new createServer(app);
@@ -29,10 +28,7 @@ io.on("connection", async (socket) => {
   socket.emit("productos", productos);
 
   let chats = await mensajesDao.listarMensajes();
-  const normalizedMessage = normalize(chats, chatSchema);
-  // socket.emit("mensajes", normalizedMessage);
-  
-  chats = chats.mensajes
+  chats = normalize(chats, chatSchema);
   socket.emit("mensajes", chats);
 
   socket.on("insert", async (producto) => {
@@ -44,9 +40,7 @@ io.on("connection", async (socket) => {
   socket.on("newMessage", async (mensaje) => {
     await mensajesDao.insertarMensaje(mensaje);
     let chats = await mensajesDao.listarMensajes();
-    const normalizedMessage = normalize(chats, chatSchema);
-    //socket.emit("mensajes", normalizedMessage);
-    chats = chats.mensajes;
+    chats = normalize(chats, chatSchema);
     io.sockets.emit("mensajes", chats);
   });
 });
