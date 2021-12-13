@@ -1,0 +1,23 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script>
+      setTimeout(function () { window.location.href = "/login"; }, 2000);
+    </script>
+  </head>
+
+  <body>
+    <div class="alert alert-primary container mt-3" role="alert">
+      <h1 style="color: darkblue">Hasta luego {{usuario}} </h1>
+    </div>
+  </body>
+</html>

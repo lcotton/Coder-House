@@ -7,6 +7,7 @@ import { productosMocks } from "./daos/productos/ProductosMocks.js";
 import { normalize, schema } from "normalizr";
 import session from "express-session";
 import MongoStore from "connect-mongo";
+import { create } from "express-handlebars";
 
 const advancedOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 
@@ -29,13 +30,22 @@ app.use(
   })
 );
 
+const hbs = create({});
+
+app.engine(".hbs", hbs.engine);
+app.set("view engine", ".hbs");
+app.set(
+  "views",
+  "/Users/pitun/Documents/GitHub/Coder-House/12-Cookies-Session-Storage/src/views"
+);
+
 let usuario;
 
 app.get("/", (req, res) => {
   if (req.session.nombre) {
     usuario = req.session.nombre;
     res.sendFile(
-      "/Users/lcotton/Documents/Git-Hub/Coder-House/12-Cookies-Session-Storage/public/index.html"
+      "/Users/pitun/Documents/GitHub/Coder-House/12-Cookies-Session-Storage/public/index.html"
     );
   } else {
     res.redirect("/login");
@@ -84,9 +94,13 @@ app.get("/api/productos-test", async (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(
-    "/Users/lcotton/Documents/Git-Hub/Coder-House/12-Cookies-Session-Storage/public/login.html"
-  );
+  if (req.session.nombre) {
+    res.redirect("/");
+  } else {
+    res.sendFile(
+      "/Users/pitun/Documents/GitHub/Coder-House/12-Cookies-Session-Storage/public/login.html"
+    );
+  }
 });
 
 app.post("/login", (req, res) => {
@@ -95,10 +109,10 @@ app.post("/login", (req, res) => {
   res.redirect("/");
 });
 
-app.get("/logout", (req, res) => {
-  req.session.destroy((err) => {
-    res.redirect("/login");
-  });
+app.get("/logout", async (req, res) => {
+  const usuario = req.session.nombre;
+  res.render("logout", { layout: "main", usuario });
+  req.session.destroy();
 });
 
 const PORT = 8080;

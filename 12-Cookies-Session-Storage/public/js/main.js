@@ -100,7 +100,6 @@ async function manejarEventoMensajes(chats) {
 socket.on("login", manejarEventoLogin);
 
 async function manejarEventoLogin(usuario) {
-
   const recursoRemoto = await fetch("plantillas/datos-usuario.hbs");
 
   const textoPlantilla = await recursoRemoto.text();
