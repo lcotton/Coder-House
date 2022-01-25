@@ -1,0 +1,961 @@
+Statistical profiling result from isolate_console_log.log, (2000 ticks, 9 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     39    1.9%          /usr/lib/system/libsystem_malloc.dylib
+     34    1.7%          /usr/lib/system/libsystem_c.dylib
+     26    1.3%          /usr/lib/system/libsystem_pthread.dylib
+     14    0.7%          /usr/lib/system/libsystem_kernel.dylib
+     11    0.6%          /usr/lib/libc++.1.dylib
+      2    0.1%          /usr/lib/system/libsystem_platform.dylib
+      1    0.1%          /usr/lib/system/libsystem_m.dylib
+      1    0.1%          /usr/lib/system/libdyld.dylib
+      1    0.1%          /usr/lib/libobjc.A.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      6    0.3%    0.3%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      3    0.1%    0.2%  LazyCompile: *resolve node:path:1091:10
+      2    0.1%    0.1%  RegExp: y{1,4}
+      2    0.1%    0.1%  LazyCompile: *onwrite node:internal/streams/writable:425:17
+      2    0.1%    0.1%  LazyCompile: *deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      2    0.1%    0.1%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      2    0.1%    0.1%  Function: ^isGreaterThanOrEqualTo /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/levels.js:74:25
+      2    0.1%    0.1%  Function: ^get hasSubscribers node:diagnostics_channel:82:21
+      1    0.1%    0.1%  RegExp: ^\/socket\.io/socket\.io(\.msgpack|\.esm)?(\.min)?\.js(\.map)?(?:\?|$)
+      1    0.1%    0.1%  LazyCompile: *realpathSync node:fs:2408:22
+      1    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      1    0.1%    0.1%  LazyCompile: *compileFunction node:vm:308:25
+      1    0.1%    0.1%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      1    0.1%    0.1%  Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      1    0.1%    0.1%  Function: ^write node:buffer:592:12
+      1    0.1%    0.1%  Function: ^validateString node:internal/validators:117:24
+      1    0.1%    0.1%  Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1    0.1%    0.1%  Function: ^toString /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/levels.js:18:11
+      1    0.1%    0.1%  Function: ^shouldTouch /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:453:25
+      1    0.1%    0.1%  Function: ^restore /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:620:17
+      1    0.1%    0.1%  Function: ^res.get /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/response.js:788:19
+      1    0.1%    0.1%  Function: ^processHeader node:_http_outgoing:501:23
+      1    0.1%    0.1%  Function: ^onwrite node:internal/streams/writable:425:17
+      1    0.1%    0.1%  Function: ^onParserExecute node:_http_server:633:25
+      1    0.1%    0.1%  Function: ^normalizeParseOptions /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/qs/lib/parse.js:189:59
+      1    0.1%    0.1%  Function: ^multiplication32 /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/faker/vendor/mersenne.js:88:29
+      1    0.1%    0.1%  Function: ^methodProxy node:_tls_wrap:552:30
+      1    0.1%    0.1%  Function: ^isObjectLike /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/utils.js:91:22
+      1    0.1%    0.1%  Function: ^getObserverType node:internal/perf/observe:117:25
+      1    0.1%    0.1%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.1%    0.1%  Function: ^get level /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/logger.js:49:12
+      1    0.1%    0.1%  Function: ^formatRaw node:internal/util/inspect:796:19
+      1    0.1%    0.1%  Function: ^emit node:events:340:44
+      1    0.1%    0.1%  Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.1%    0.1%  Function: ^debug /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/node_modules/debug/src/common.js:66:17
+      1    0.1%    0.1%  Function: ^createWriteWrap node:internal/stream_base_commons:113:25
+      1    0.1%    0.1%  Function: ^compileFunction node:vm:308:25
+      1    0.1%    0.1%  Function: ^append node:internal/linkedlist:29:16
+      1    0.1%    0.1%  Function: ^_send node:_http_outgoing:319:49
+      1    0.1%    0.1%  Function: ^_log /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/logger.js:86:7
+      1    0.1%    0.1%  Function: ^Timeout node:internal/timers:167:17
+      1    0.1%    0.1%  Function: ^Long.add /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/long.js:252:35
+      1    0.1%    0.1%  Function: ^Hash node:internal/crypto/hash:58:14
+      1    0.1%    0.1%  Function: ^Cookie /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/session/cookie.js:25:46
+      1    0.1%    0.1%  Function: ^<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/console.js:5:10
+
+ [C++]:
+   ticks  total  nonlib   name
+    720   36.0%   38.5%  t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+    517   25.9%   27.6%  t _do_compat
+    331   16.6%   17.7%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     82    4.1%    4.4%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     32    1.6%    1.7%  T _semaphore_destroy
+     20    1.0%    1.1%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    0.6%    0.6%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    0.6%    0.6%  T _mach_msg_server_once
+     11    0.6%    0.6%  T _kdebug_typefilter
+      7    0.3%    0.4%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.3%    0.3%  T __kernelrpc_mach_port_set_attributes
+      5    0.3%    0.3%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      4    0.2%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      4    0.2%    0.2%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.2%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.2%  T _semaphore_create
+      3    0.1%    0.2%  T _host_request_notification
+      2    0.1%    0.1%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t __simple_asl_escape_val
+      2    0.1%    0.1%  t __simple_asl_connect_once
+      2    0.1%    0.1%  t ___commpage_gettimeofday_internal
+      2    0.1%    0.1%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  T __simple_asl_send
+      1    0.1%    0.1%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)5>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t std::__1::vector<v8::Global<v8::Context>, std::__1::allocator<v8::Global<v8::Context> > >::__append(unsigned long)
+      1    0.1%    0.1%  t std::__1::__tree<int, std::__1::less<int>, std::__1::allocator<int> >::destroy(std::__1::__tree_node<int, void*>*)
+      1    0.1%    0.1%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
+      1    0.1%    0.1%  t std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::rehash(unsigned long)
+      1    0.1%    0.1%  t node::Environment::StartProfilerIdleNotifier()::$_5::__invoke(uv_check_s*)
+      1    0.1%    0.1%  T node::loader::ModuleWrap::SetInitializeImportMetaObjectCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::InternalCallbackScope::Close()
+      1    0.1%    0.1%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T _posix_spawnattr_getmacpolicyinfo_np
+      1    0.1%    0.1%  T _nfssvc
+      1    0.1%    0.1%  T _mach_vm_map
+      1    0.1%    0.1%  T _host_create_mach_voucher
+      1    0.1%    0.1%  T __simple_asl_msg_set
+
+ [Summary]:
+   ticks  total  nonlib   name
+     58    2.9%    3.1%  JavaScript
+   1804   90.2%   96.4%  C++
+    160    8.0%    8.6%  GC
+    129    6.5%          Shared libraries
+      9    0.5%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    578   50.5%   28.9%  t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+    331   28.9%   16.6%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     82    7.2%    4.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     37    3.2%    1.9%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+     29    2.5%    1.4%  T _semaphore_destroy
+     20    1.7%    1.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    1.0%    0.6%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    1.0%    0.6%  T _mach_msg_server_once
+      7    0.6%    0.3%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.4%    0.3%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      4    0.3%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      4    0.3%    0.2%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.3%    0.1%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.1%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.1%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      2    0.2%    0.1%  t __simple_asl_connect_once
+      2    0.2%    0.1%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.1%  T __simple_asl_send
+      1    0.1%    0.1%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)5>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t std::__1::__tree<int, std::__1::less<int>, std::__1::allocator<int> >::destroy(std::__1::__tree_node<int, void*>*)
+      1    0.1%    0.1%  t std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::rehash(unsigned long)
+      1    0.1%    0.1%  t ___commpage_gettimeofday_internal
+      1    0.1%    0.1%  T node::loader::ModuleWrap::SetInitializeImportMetaObjectCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T _semaphore_create
+      1    0.1%    0.1%  T _nfssvc
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    720   36.0%  t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+     44    6.1%    t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      4    9.1%      LazyCompile: *realpathSync node:fs:2408:22
+      3   75.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      3  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      3  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   25.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3    6.8%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2   66.7%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   33.3%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2    4.5%      t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1   50.0%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   50.0%        Function: ^clearBuffer node:internal/streams/writable:529:21
+      1  100.0%          Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1  100.0%            Function: ^end node:_http_outgoing:833:45
+      2    4.5%      Function: ^removeColors node:internal/util:76:22
+      2  100.0%        Function: ^isBelowBreakLength node:internal/util/inspect:1740:28
+      2  100.0%          Function: ^reduceToSingleString node:internal/util/inspect:1764:30
+      1   50.0%            LazyCompile: *formatRaw node:internal/util/inspect:796:19
+      1   50.0%            Function: ^formatRaw node:internal/util/inspect:796:19
+      2    4.5%      Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2  100.0%        Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1   50.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   50.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2    4.5%      Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1   50.0%        LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            LazyCompile: ~parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1   50.0%        Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      1    2.3%      LazyCompile: ~set pathname node:internal/url:884:15
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%          LazyCompile: ~pathToFileURL node:internal/url:1455:23
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/modules/run_main:47:29
+      1    2.3%      LazyCompile: ~parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/semver/semver.js:245:16
+      1  100.0%        LazyCompile: ~module.exports.evaluate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/node-pre-gyp/lib/util/versioning.js:277:35
+      1  100.0%          LazyCompile: ~exports.find /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/node-pre-gyp/lib/pre-binding.js:16:24
+      1  100.0%            Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bcrypt/bcrypt.js:1:1
+      1    2.3%      LazyCompile: ~command /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1  100.0%        LazyCompile: ~executeScram /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:74:22
+      1  100.0%          LazyCompile: ~auth /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:39:9
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:73:85
+      1    2.3%      LazyCompile: ~attach /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/engine.io/build/server.js:459:11
+      1  100.0%        LazyCompile: ~attach /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/engine.io/build/engine.io.js:51:16
+      1  100.0%          LazyCompile: ~initEngine /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/socket.io/dist/index.js:240:15
+      1  100.0%            LazyCompile: ~attach /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/socket.io/dist/index.js:159:11
+      1    2.3%      LazyCompile: ~asString /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/date-format/lib/index.js:29:18
+      1  100.0%        LazyCompile: ~timestampLevelAndCategory /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/layouts.js:40:35
+      1  100.0%          LazyCompile: ~colouredLayout /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/layouts.js:69:24
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/console.js:5:10
+      1    2.3%      LazyCompile: ~Socket node:net:283:16
+      1  100.0%        LazyCompile: ~onconnection node:net:1548:22
+      1    2.3%      LazyCompile: ~Readable.pipe node:internal/streams/readable:654:35
+      1  100.0%        LazyCompile: ~Connection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:37:16
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:16:29
+      1  100.0%            LazyCompile: ~callback /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:239:31
+      1    2.3%      LazyCompile: ~FastBuffer node:internal/buffer:958:14
+      1  100.0%        LazyCompile: ~createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%          LazyCompile: ~allocUnsafeSlow node:buffer:382:50
+      1  100.0%            LazyCompile: ~readFileHandle node:internal/fs/promises:359:30
+      1    2.3%      LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/route.js:192:25
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%          Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/route.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.3%      LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/dotenv/lib/main.js:43:57
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%          LazyCompile: ~parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/dotenv/lib/main.js:38:16
+      1  100.0%            LazyCompile: ~config /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/dotenv/lib/main.js:82:17
+      1    2.3%      LazyCompile: *tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%        Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    2.3%      LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    2.3%      LazyCompile: *next /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:176:16
+      1  100.0%        Function: ^strategy.pass /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/passport/lib/middleware/authenticate.js:345:31
+      1  100.0%          Function: ^SessionStrategy.authenticate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/passport/lib/strategies/session.js:45:50
+      1  100.0%            Function: ^attempt /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/passport/lib/middleware/authenticate.js:180:22
+      1    2.3%      LazyCompile: *deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            Function: ^parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    2.3%      Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/faker/lib/locales/he/name/first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    2.3%      Function: ^setHeader node:_http_outgoing:574:57
+      1  100.0%        Function: ^expressInit /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          Function: ^handle /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:288:23
+      1    2.3%      Function: ^set maxAge /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/session/cookie.js:83:13
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%          Function: ^Cookie /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/session/cookie.js:25:46
+      1  100.0%            Function: ^store.generate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:158:28
+      1    2.3%      Function: ^sendLogEventToAppender /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/log4js.js:36:32
+      1  100.0%        Function: ^<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/clustering.js:23:21
+      1  100.0%          t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%            Function: ^sendToListeners /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/clustering.js:22:25
+      1    2.3%      Function: ^resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.3%      Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    2.3%      Function: ^read node:internal/modules/package_json_reader:16:14
+      1  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    2.3%      Function: ^header /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/response.js:754:29
+      1  100.0%        Function: ^json /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/response.js:239:25
+      1  100.0%          Function: ^<anonymous> file:///Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/src/router/info.js:24:32
+      1  100.0%            Function: ^handle /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/layer.js:86:49
+      1    2.3%      Function: ^hash /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:596:14
+      1  100.0%        Function: ^generate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:363:22
+      1  100.0%          Function: ^session /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:179:26
+      1  100.0%            Function: ^handle /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/layer.js:86:49
+      1    2.3%      Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      1  100.0%        Function: ^<anonymous> node:_http_outgoing:564:45
+      1  100.0%          Function: ^setHeader node:_http_outgoing:574:57
+      1  100.0%            Function: ^header /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/response.js:754:29
+      1    2.3%      Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    2.3%      Function: ^asString /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/date-format/lib/index.js:29:18
+      1  100.0%        Function: ^timestampLevelAndCategory /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/layouts.js:40:35
+      1  100.0%          Function: ^colouredLayout /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/layouts.js:69:24
+      1  100.0%            Function: ^<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/console.js:5:10
+      1    2.3%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/operations/list_collections.js:1:1
+      1    2.3%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    2.3%      Function: ^<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%          LazyCompile: ~pluralize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1  100.0%            LazyCompile: ~exports.toCollectionName /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/utils.js:38:36
+     32    4.4%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     26   81.3%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      4   15.4%        Function: ~<anonymous> node:crypto:1:1
+      4  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3   11.5%        Function: ~<anonymous> node:tls:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3   11.5%        Function: ~<anonymous> node:http:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2    7.7%        Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    7.7%        Function: ~<anonymous> node:child_process:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    7.7%        Function: ~<anonymous> node:_http_client:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    7.7%        Function: ~<anonymous> node:_http_agent:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    3.8%        LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1  100.0%          LazyCompile: ~get node:crypto:287:8
+      1  100.0%            t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1    3.8%        LazyCompile: ~lazyLoadStreams node:fs:2841:25
+      1  100.0%          LazyCompile: ~get ReadStream node:fs:2984:17
+      1  100.0%            t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1    3.8%        LazyCompile: ~initCJSParse node:internal/modules/esm/translators:63:28
+      1  100.0%          LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:168:60
+      1  100.0%            LazyCompile: ~moduleProvider node:internal/modules/esm/loader:229:28
+      1    3.8%        LazyCompile: ~get node:dns:334:8
+      1  100.0%          t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%            LazyCompile: *syncExports node:internal/bootstrap/loaders:287:14
+      1    3.8%        Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    3.8%        Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    3.8%        Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    3.8%        Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      6   18.8%      Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      6  100.0%        Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      6  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      6  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     14    1.9%    Function: ^writevGeneric node:internal/stream_base_commons:126:23
+     14  100.0%      Function: ^Socket._writeGeneric node:net:769:42
+     14  100.0%        Function: ^Socket._writev node:net:801:36
+     14  100.0%          Function: ^doWrite node:internal/streams/writable:398:17
+     14  100.0%            Function: ^clearBuffer node:internal/streams/writable:529:21
+     14    1.9%    Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+     10   71.4%      Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+     10  100.0%        Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+     10  100.0%          Function: ^parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+     10  100.0%            Function: ^messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      3   21.4%      Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      2   66.7%        Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      2  100.0%          Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      2  100.0%            Function: ^parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1   33.3%        Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      1    7.1%      LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      1  100.0%          LazyCompile: ~parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1  100.0%            LazyCompile: ~messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+     12    1.7%    LazyCompile: *compileFunction node:vm:308:25
+      7   58.3%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      7  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      7  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      7  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      5   41.7%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      5  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      5  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      5  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     10    1.4%    LazyCompile: *realpathSync node:fs:2408:22
+      5   50.0%      Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      5  100.0%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      5  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      4   80.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1   20.0%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      4   40.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      3   75.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   25.0%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   10.0%      LazyCompile: *tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%        Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     10    1.4%    Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     10  100.0%      Function: ^writeGeneric node:internal/stream_base_commons:151:22
+     10  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+     10  100.0%          Function: ^Socket._write node:net:806:35
+     10  100.0%            Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      9    1.3%    LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      9  100.0%      LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2   22.2%        Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   11.1%        LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:422:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:23:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1   11.1%        Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   11.1%        Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   11.1%        Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   11.1%        Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   11.1%        Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   11.1%        Function: ~<anonymous> node:internal/bootstrap/pre_execution:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      8    1.1%    Function: ^authenticate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/passport/lib/middleware/authenticate.js:94:31
+      4   50.0%      LazyCompile: *next /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:176:16
+      4  100.0%        Function: ^initialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/passport/lib/middleware/initialize.js:51:29
+      4  100.0%          LazyCompile: *next /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:176:16
+      4  100.0%            Function: ^session /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:179:26
+      4   50.0%      Function: ^handle /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/layer.js:86:49
+      4  100.0%        Function: ^trim_prefix /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:288:23
+      4  100.0%          Function: ^<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:275:64
+      4  100.0%            Function: ^process_params /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/router/index.js:327:47
+
+    517   25.9%  t _do_compat
+
+    331   16.6%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    328   99.1%    Function: ^compileFunction node:vm:308:25
+    325   99.1%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    325  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+    320   98.5%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    256   80.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     64   20.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      5    1.5%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      5  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+
+     82    4.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     78   95.1%    Function: ^readSync node:fs:684:18
+     64   82.1%      Function: ^tryReadSync node:fs:429:21
+     64  100.0%        Function: ^readFileSync node:fs:450:22
+     60   93.8%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     48   80.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     12   20.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2    3.1%          LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1158:39
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2    3.1%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     14   17.9%      LazyCompile: *readFileSync node:fs:450:22
+     14  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     14  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     14  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      4    4.9%    LazyCompile: ~readSync node:fs:684:18
+      4  100.0%      LazyCompile: ~tryReadSync node:fs:429:21
+      4  100.0%        LazyCompile: ~readFileSync node:fs:450:22
+      4  100.0%          LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:212:34
+      2   50.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:168:60
+      1   25.0%            LazyCompile: ~<anonymous> node:internal/modules/esm/translators:249:36
+      1   25.0%            Function: ^commonjsStrategy node:internal/modules/esm/translators:168:60
+
+     39    1.9%  /usr/lib/system/libsystem_malloc.dylib
+      9   23.1%    t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      3   33.3%      t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      2   66.7%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1   33.3%        Function: ^parserOnIncoming node:_http_server:852:26
+      1  100.0%          Function: ^parserOnHeadersComplete node:_http_common:77:33
+      2   22.2%      LazyCompile: *realpathSync node:fs:2408:22
+      1   50.0%        LazyCompile: *tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1   50.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1   11.1%      LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   11.1%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   11.1%      Function: ^realpathSync node:fs:2408:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1   11.1%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/types/subdocument.js:1:1
+      2    5.1%    LazyCompile: ~serializeInto /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:550:23
+      1   50.0%      LazyCompile: ~serialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:111:19
+      1  100.0%        LazyCompile: ~serializeBson /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1  100.0%          LazyCompile: ~makeDocumentSegment /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:522:24
+      1  100.0%            LazyCompile: ~toBin /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1   50.0%      Function: ^serializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:258:25
+      1  100.0%        LazyCompile: ~serializeInto /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%          LazyCompile: ~serialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:111:19
+      1  100.0%            LazyCompile: ~serializeBson /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:530:18
+      2    5.1%    Function: ^randomBytes node:internal/crypto/random:90:21
+      1   50.0%      LazyCompile: ~randomBytesSync /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/random-bytes/index.js:72:25
+      1  100.0%        Function: ^uidSync /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/uid-safe/index.js:75:18
+      1  100.0%          Function: ^generateSessionId /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:518:27
+      1  100.0%            Function: ^store.generate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:158:28
+      1   50.0%      Function: ^randomBytesSync /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/random-bytes/index.js:72:25
+      1  100.0%        Function: ^uidSync /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/uid-safe/index.js:75:18
+      1  100.0%          Function: ^generateSessionId /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:518:27
+      1  100.0%            Function: ^store.generate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express-session/index.js:158:28
+      1    2.6%    LazyCompile: ~slice node:buffer:1115:40
+      1  100.0%      LazyCompile: ~Bitfield /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%        LazyCompile: ~Bitfield /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%          LazyCompile: ~read /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1  100.0%            Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/saslprep/lib/memory-code-points.js:1:1
+      1    2.6%    LazyCompile: ~retry /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/graceful-fs/graceful-fs.js:378:16
+      1  100.0%      LazyCompile: ~resetQueue /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/graceful-fs/graceful-fs.js:364:21
+      1  100.0%        LazyCompile: ~closeSync /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/graceful-fs/graceful-fs.js:72:24
+      1  100.0%          Function: ^readFileSync node:fs:450:22
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.6%    LazyCompile: ~passwordDigest /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%      LazyCompile: ~continueScramConversation /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%          LazyCompile: ~messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            Function: ^emit node:events:340:44
+      1    2.6%    LazyCompile: ~maxWireVersion /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:533:24
+      1  100.0%      Function: ^supportsOpMsg /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:413:23
+      1  100.0%        LazyCompile: ~command /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:63:43
+      1  100.0%            LazyCompile: ~prepareHandshakeDocument /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:128:34
+      1    2.6%    LazyCompile: ~isBelowBreakLength node:internal/util/inspect:1740:28
+      1  100.0%      LazyCompile: ~reduceToSingleString node:internal/util/inspect:1764:30
+      1  100.0%        LazyCompile: ~formatRaw node:internal/util/inspect:796:19
+      1  100.0%          LazyCompile: ~formatValue node:internal/util/inspect:726:21
+      1  100.0%            LazyCompile: ~inspect node:internal/util/inspect:286:17
+      1    2.6%    LazyCompile: ~getEncodingOps node:buffer:678:24
+      1  100.0%      Function: ^toString node:buffer:782:46
+      1  100.0%        Function: ^readFileSync node:fs:450:22
+      1  100.0%          LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1158:39
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.6%    LazyCompile: ~fromOptions /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/write_concern.js:40:23
+      1  100.0%      LazyCompile: ~resolveOptions /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:824:24
+      1  100.0%        LazyCompile: ~createCollection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/db.js:143:21
+      1  100.0%          LazyCompile: ~createCollection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/connection.js:398:82
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/connection.js:567:17
+      1    2.6%    LazyCompile: ~deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%      LazyCompile: ~deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          LazyCompile: ~deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            LazyCompile: ~parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1    2.6%    LazyCompile: ~calculateDurationInMs /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:714:31
+      1  100.0%      LazyCompile: ~measureAndReschedule /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:287:34
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:310:83
+      1  100.0%          Function: ^messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            Function: ^emit node:events:340:44
+      1    2.6%    LazyCompile: ~_read /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:30:10
+      1  100.0%      Function: ^Readable.read node:internal/streams/readable:394:35
+      1  100.0%        LazyCompile: ~maybeReadMore_ node:internal/streams/readable:609:24
+      1  100.0%          Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    2.6%    LazyCompile: ~_addHeaderLines node:_http_incoming:199:25
+      1  100.0%      Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    2.6%    LazyCompile: ~ObjectId /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/objectid.js:23:22
+      1  100.0%      Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        Function: ^deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:162:21
+      1    2.6%    LazyCompile: ~ModuleJob node:internal/modules/esm/module_job:55:14
+      1  100.0%      LazyCompile: ~getModuleJob node:internal/modules/esm/loader:221:21
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1    2.6%    LazyCompile: ~Binary.value /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/binary.js:130:39
+      1  100.0%      Function: ^serializeBinary /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:459:25
+      1  100.0%        Function: ^serializeInto /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%          Function: ^serializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:258:25
+      1  100.0%            Function: ^serializeInto /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:550:23
+      1    2.6%    LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:633:52
+      1  100.0%      t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%        LazyCompile: ~arrayStrictEqual /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:629:26
+      1  100.0%          LazyCompile: ~equals /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:379:24
+      1    2.6%    LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:552:53
+      1  100.0%      Function: ^emit node:events:340:44
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:58:62
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:200:52
+      1    2.6%    LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:63:43
+      1  100.0%      LazyCompile: ~prepareHandshakeDocument /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:128:34
+      1  100.0%        LazyCompile: ~performInitialHandshake /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:47:33
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:16:29
+      1  100.0%            LazyCompile: ~callback /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:239:31
+      1    2.6%    Function: ^ensureBuffer /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/ensure_buffer.js:15:22
+      1  100.0%      Function: ^ObjectId /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/objectid.js:23:22
+      1  100.0%        LazyCompile: *deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          LazyCompile: *deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            Function: ^deserialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:36:21
+
+     34    1.7%  /usr/lib/system/libsystem_c.dylib
+     12   35.3%    LazyCompile: *compileFunction node:vm:308:25
+     11   91.7%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+     11  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     11  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     11  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    8.3%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    2.9%    t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%      LazyCompile: ~resolveAuthMechanism /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:70:25
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:73:85
+      1  100.0%          LazyCompile: ~messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            Function: ^emit node:events:340:44
+      1    2.9%    LazyCompile: ~remoteAddress node:net:730:52
+      1  100.0%      LazyCompile: ~streamIdentifier /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:482:26
+      1  100.0%        LazyCompile: ~Connection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:37:16
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:16:29
+      1  100.0%            LazyCompile: ~callback /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:239:31
+      1    2.9%    LazyCompile: ~query /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/middleware/query.js:25:32
+      1  100.0%      LazyCompile: ~lazyrouter /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/application.js:137:37
+      1  100.0%        LazyCompile: ~use /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/application.js:187:23
+      1  100.0%          Script: ~<anonymous> file:///Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/src/server.js:1:1
+      1  100.0%            t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1    2.9%    LazyCompile: ~processWaitQueue /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:628:26
+      1  100.0%      LazyCompile: ~serverUpdateHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:379:24
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:552:53
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:58:62
+      1    2.9%    LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:23:36
+      1  100.0%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%    LazyCompile: ~log node:internal/console/constructor:358:6
+      1  100.0%      t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/console.js:5:10
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/logLevelFilter.js:4:10
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/log4js.js:42:29
+      1    2.9%    LazyCompile: ~insert node:internal/timers:350:16
+      1  100.0%      LazyCompile: ~setUnrefTimeout node:internal/timers:372:25
+      1  100.0%        LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:254:26
+      1  100.0%          LazyCompile: ~makeConnection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%            LazyCompile: ~connect /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1    2.9%    LazyCompile: ~hrtime node:internal/process/per_thread:67:18
+      1  100.0%      Function: ^now /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:708:13
+      1  100.0%        LazyCompile: ~checkServer /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:138:21
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:222:12
+      1  100.0%            LazyCompile: ~executeAndReschedule /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:786:34
+      1    2.9%    LazyCompile: ~go$open /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/graceful-fs/graceful-fs.js:337:22
+      1  100.0%      LazyCompile: ~open /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/graceful-fs/graceful-fs.js:331:17
+      1  100.0%        LazyCompile: ~WriteStream$open /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/graceful-fs/graceful-fs.js:308:29
+      1  100.0%          LazyCompile: ~_construct node:internal/fs/streams:42:20
+      1  100.0%            LazyCompile: ~constructNT node:internal/streams/destroy:250:21
+      1    2.9%    LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:133:19
+      1  100.0%        Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.9%    LazyCompile: ~createHmac node:crypto:161:20
+      1  100.0%      LazyCompile: ~HMAC /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:214:14
+      1  100.0%        LazyCompile: ~continueScramConversation /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%            LazyCompile: ~messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    2.9%    LazyCompile: ~createAppender /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:61:24
+      1  100.0%      LazyCompile: ~getAppender /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:47:21
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:97:41
+      1  100.0%          t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%            LazyCompile: ~setup /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:90:15
+      1    2.9%    LazyCompile: ~connectionListenerInternal node:_http_server:442:36
+      1  100.0%      Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:445:36
+      1  100.0%        LazyCompile: ~connectionListener node:_http_server:436:28
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            LazyCompile: ~onconnection node:net:1548:22
+      1    2.9%    LazyCompile: ~connect node:_tls_wrap:1597:35
+      1  100.0%      LazyCompile: ~makeConnection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%        LazyCompile: ~connect /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1  100.0%          LazyCompile: ~checkServer /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:138:21
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:222:12
+      1    2.9%    LazyCompile: ~checkServerIdentity node:tls:230:59
+      1  100.0%      LazyCompile: ~onConnectSecure node:_tls_wrap:1516:25
+      1  100.0%        Function: ^emit node:events:340:44
+      1  100.0%          LazyCompile: ~TLSSocket._finishInit node:_tls_wrap:918:43
+      1  100.0%            LazyCompile: ~ssl.onhandshakedone node:_tls_wrap:723:27
+      1    2.9%    LazyCompile: ~check node:internal/crypto/pbkdf2:89:15
+      1  100.0%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+      1  100.0%        LazyCompile: ~HI /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:227:12
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    2.9%    LazyCompile: ~Readable.read node:internal/streams/readable:394:35
+      1  100.0%      LazyCompile: ~flow node:internal/streams/readable:1009:14
+      1  100.0%        LazyCompile: ~resume_ node:internal/streams/readable:985:17
+      1  100.0%          Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    2.9%    Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.9%    Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.9%    Function: ^processTimers node:internal/timers:485:25
+      1    2.9%    Function: ^onceWrapper node:events:504:21
+      1  100.0%      Function: ^emit node:events:340:44
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:221:76
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1  100.0%            LazyCompile: ~handleOperationResult /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:315:42
+
+     32    1.6%  T _semaphore_destroy
+      5   15.6%    LazyCompile: *compileFunction node:vm:308:25
+      4   80.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      4  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      4  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   20.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2    6.3%    LazyCompile: ~checkInt node:internal/buffer:58:18
+      1   50.0%      LazyCompile: ~writeU_Int32LE node:internal/buffer:690:24
+      1  100.0%        LazyCompile: ~writeInt32LE node:internal/buffer:860:22
+      1  100.0%          LazyCompile: ~toBin /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1  100.0%            LazyCompile: ~writeCommand /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1   50.0%      Function: ^writeU_Int32LE node:internal/buffer:690:24
+      1  100.0%        Function: ^writeUInt32LE node:internal/buffer:704:23
+      1  100.0%          Function: ^toBin /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1  100.0%            Function: ^writeCommand /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1    3.1%    t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%      t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%        Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/fs-extra/lib/fs/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    3.1%    LazyCompile: ~toBin /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1  100.0%      LazyCompile: ~writeCommand /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1  100.0%        LazyCompile: ~write /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:488:15
+      1  100.0%          LazyCompile: ~command /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:63:43
+      1    3.1%    LazyCompile: ~setRequestTimeout node:_http_server:762:27
+      1    3.1%    LazyCompile: ~readUInt8 node:internal/buffer:248:19
+      1  100.0%      Function: ^parse /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1  100.0%        Function: ^messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            Function: ^processIncomingData /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    3.1%    LazyCompile: ~randomBytes node:internal/crypto/random:90:21
+      1  100.0%      LazyCompile: ~uuidV4 /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:522:16
+      1  100.0%        LazyCompile: ~ServerSession /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:524:16
+      1  100.0%          LazyCompile: ~acquire /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:577:12
+      1  100.0%            LazyCompile: ~get serverSession /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:93:22
+      1    3.1%    LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:23:36
+      1  100.0%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.1%    LazyCompile: ~module.exports /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/has-unicode/index.js:4:44
+      1  100.0%      LazyCompile: ~Gauge._computeTheme /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/gauge/index.js:85:42
+      1  100.0%        LazyCompile: ~Gauge /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/gauge/index.js:19:16
+      1  100.0%          Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/npmlog/log.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    3.1%    LazyCompile: ~makeFirstMessage /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:61:26
+      1  100.0%      LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:25:32
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/crypto/random:104:43
+      1  100.0%          LazyCompile: ~onJobDone node:internal/crypto/random:299:19
+      1    3.1%    LazyCompile: ~incRefCount node:internal/timers:299:21
+      1  100.0%      Function: ^Timeout node:internal/timers:167:17
+      1  100.0%        LazyCompile: ~setTimeout node:timers:140:20
+      1  100.0%          LazyCompile: ~RTTPinger /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:260:16
+      1  100.0%            LazyCompile: ~checkServer /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:138:21
+      1    3.1%    LazyCompile: ~getConstructorName node:internal/util/inspect:548:28
+      1  100.0%      LazyCompile: ~formatRaw node:internal/util/inspect:796:19
+      1  100.0%        LazyCompile: ~formatValue node:internal/util/inspect:726:21
+      1  100.0%          LazyCompile: ~inspect node:internal/util/inspect:286:17
+      1  100.0%            LazyCompile: ~formatWithOptionsInternal node:internal/util/inspect:1891:35
+      1    3.1%    LazyCompile: ~compileFunction node:vm:308:25
+      1  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1    3.1%    LazyCompile: ~_setExistingSizeAndDate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/streamroller/lib/RollingFileWriteStream.js:79:26
+      1  100.0%      LazyCompile: ~RollingFileWriteStream /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/streamroller/lib/RollingFileWriteStream.js:31:14
+      1  100.0%        LazyCompile: ~RollingFileStream /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1  100.0%          LazyCompile: ~openTheStream /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/file.js:16:23
+      1  100.0%            LazyCompile: ~fileAppender /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/file.js:46:22
+      1    3.1%    LazyCompile: ~Server.listen node:net:1414:35
+      1  100.0%      Script: ~<anonymous> file:///Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/src/server.js:1:1
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%          t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%            t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1    3.1%    LazyCompile: ~Schema.setupTimestamp /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/schema.js:1269:43
+      1  100.0%      LazyCompile: ~Schema /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/schema.js:90:16
+      1  100.0%        LazyCompile: ~Mongoose.model /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/index.js:461:36
+      1  100.0%          Script: ~<anonymous> file:///Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/src/model.js:1:1
+      1  100.0%            t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1    3.1%    LazyCompile: ~Query /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:29:16
+      1  100.0%      LazyCompile: ~command /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:63:43
+      1  100.0%          LazyCompile: ~prepareHandshakeDocument /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:128:34
+      1  100.0%            LazyCompile: ~performInitialHandshake /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:47:33
+      1    3.1%    LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:363:44
+      1  100.0%      LazyCompile: ~callback /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:48:31
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:117:44
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:152:83
+      1  100.0%            LazyCompile: ~messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    3.1%    LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%      LazyCompile: ~messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%        Function: ^emit node:events:340:44
+      1  100.0%          LazyCompile: ~processIncomingData /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%            LazyCompile: ~_write /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1    3.1%    LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/model.js:4931:15
+      1  100.0%      Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    3.1%    LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/model.js:1628:52
+      1  100.0%      LazyCompile: ~promiseOrCallback /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%        LazyCompile: ~Mongoose._promiseOrCallback /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/index.js:1152:49
+      1  100.0%          LazyCompile: ~ensureIndexes /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/model.js:1618:45
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/model.js:1267:5
+      1    3.1%    Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/defaultAuthProviders.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    3.1%    Function: ^setRequestTimeout node:_http_server:762:27
+      1    3.1%    Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+
+     26    1.3%  /usr/lib/system/libsystem_pthread.dylib
+      6   23.1%    LazyCompile: *compileFunction node:vm:308:25
+      4   66.7%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      4  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      4  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2   33.3%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      2  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2    7.7%    t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1   50.0%      LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:111:27
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/configuration.js:46:21
+      1  100.0%          t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%            LazyCompile: ~configure /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/configuration.js:37:19
+      1   50.0%      LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/console.js:5:10
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/logLevelFilter.js:4:10
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/log4js.js:42:29
+      1  100.0%            t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1    3.8%    LazyCompile: ~writeGeneric node:internal/stream_base_commons:151:22
+      1  100.0%      LazyCompile: ~Socket._writeGeneric node:net:769:42
+      1  100.0%        LazyCompile: ~Socket._write node:net:806:35
+      1  100.0%          LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%            LazyCompile: ~_write node:internal/streams/writable:283:16
+      1    3.8%    LazyCompile: ~withConnection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:249:19
+      1  100.0%      LazyCompile: ~command /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:133:12
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:213:106
+      1  100.0%          LazyCompile: ~processWaitQueue /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:628:26
+      1  100.0%            LazyCompile: ~serverUpdateHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:379:24
+      1    3.8%    LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:142:29
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:23:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.8%    LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:254:26
+      1  100.0%      LazyCompile: ~makeConnection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%        LazyCompile: ~connect /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1  100.0%          LazyCompile: ~checkServer /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:138:21
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:222:12
+      1    3.8%    LazyCompile: ~serializeNumber /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:43:25
+      1  100.0%      Function: ^serializeInto /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%        Function: ^serialize /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/bson.js:111:19
+      1  100.0%          LazyCompile: ~serializeBson /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1  100.0%            LazyCompile: ~makeDocumentSegment /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:522:24
+      1    3.8%    LazyCompile: ~selectServer /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:281:17
+      1  100.0%      LazyCompile: ~connect /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:182:12
+      1  100.0%        LazyCompile: ~createTopology /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:53:24
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:41:67
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:72:39
+      1    3.8%    LazyCompile: ~processWaitQueue /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:628:26
+      1  100.0%      LazyCompile: ~selectServer /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:281:17
+      1  100.0%        LazyCompile: ~executeWithServerSelection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:65:36
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:16:48
+      1  100.0%            LazyCompile: ~maybePromise /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/utils.js:482:22
+      1    3.8%    LazyCompile: ~messageHandler /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%      Function: ^emit node:events:340:44
+      1  100.0%        LazyCompile: ~processIncomingData /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%          LazyCompile: ~_write /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1  100.0%            LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1    3.8%    LazyCompile: ~immediate /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/helpers/immediate.js:12:36
+      1  100.0%      LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/connection.js:566:34
+      1  100.0%        LazyCompile: ~promiseOrCallback /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%          LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/connection.js:558:18
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/model.js:1352:52
+      1    3.8%    LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:133:19
+      1  100.0%        Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    3.8%    LazyCompile: ~createServerErrorConstructor /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/http-errors/index.js:180:39
+      1  100.0%      Function: ^forEachCode /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/http-errors/index.js:243:38
+      1  100.0%        t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%          LazyCompile: ~populateConstructorExports /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/http-errors/index.js:242:37
+      1  100.0%            Function: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/http-errors/index.js:1:1
+      1    3.8%    LazyCompile: ~createAppender /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:61:24
+      1  100.0%      LazyCompile: ~getAppender /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:47:21
+      1  100.0%        LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:97:41
+      1  100.0%          t node::fs::FileHandle::DoShutdown(node::ShutdownWrap*)::$_2::__invoke(uv_fs_s*)
+      1  100.0%            LazyCompile: ~setup /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/log4js/lib/appenders/index.js:90:15
+      1    3.8%    LazyCompile: ~collection /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/node_modules/mongodb/lib/db.js:182:15
+      1  100.0%      LazyCompile: ~NativeCollection.onOpen /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:47:45
+      1  100.0%        LazyCompile: ~Connection.onOpen /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/connection.js:626:39
+      1  100.0%          LazyCompile: ~_setClient /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/connection.js:826:20
+      1  100.0%            LazyCompile: ~<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/connection.js:786:20
+      1    3.8%    LazyCompile: ~ServerResponse node:_http_server:178:24
+      1  100.0%      LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    3.8%    LazyCompile: ~Schema.interpretAsType /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/schema.js:910:44
+      1  100.0%      LazyCompile: ~Schema.path /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/schema.js:646:33
+      1  100.0%        LazyCompile: ~add /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/schema.js:480:36
+      1  100.0%          LazyCompile: ~compile /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/model.js:4739:33
+      1  100.0%            LazyCompile: ~Mongoose._model /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/mongoose/lib/index.js:525:37
+      1    3.8%    LazyCompile: ~Long.compare /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/long.js:291:39
+      1  100.0%      LazyCompile: ~Long.comp /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/long.js:311:36
+      1  100.0%        LazyCompile: ~Long.lessThanOrEqual /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/long.js:516:47
+      1  100.0%          LazyCompile: ~deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            LazyCompile: ~deserializeObject /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    3.8%    LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%      LazyCompile: ~Socket node:net:283:16
+      1  100.0%        LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%            LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:133:19
+      1    3.8%    Function: ^handle /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/application.js:158:29
+      1  100.0%      Function: ^app /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/express/lib/express.js:38:21
+      1  100.0%        Function: ^<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/engine.io/build/server.js:473:30
+      1  100.0%          Function: ^<anonymous> /Users/lcotton/Documents/Git-Hub/Coder-House/16-Logs-Profiling-Debug/node_modules/socket.io/dist/index.js:262:27
+      1  100.0%            LazyCompile: *emit node:events:340:44
+
+     20    1.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     19   95.0%    Function: ^read node:internal/modules/package_json_reader:16:14
+     18   94.7%      Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     16   88.9%        Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+     16  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     15   93.8%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    6.3%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2   11.1%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      2  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    5.3%      LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    5.0%    LazyCompile: ~read node:internal/modules/package_json_reader:16:14
+      1  100.0%      LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%          LazyCompile: ~shouldUseESMLoader node:internal/modules/run_main:26:28
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+
