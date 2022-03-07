@@ -1,0 +1,42 @@
+mutation {
+  createProducto(
+    datos: {
+      nombre: "Calculadora"
+      precio: 70
+      foto: "https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+    }
+  ) {
+    nombre
+    precio
+    foto
+  }
+}
+
+query {
+  getProductos {
+    nombre
+    precio
+    foto
+  }
+}
+
+mutation {
+  deleteProducto(nombre: "Calculadora") {
+    nombre
+    precio
+    foto
+  }
+}
+
+mutation {
+  updateProducto(
+    nombre: "Calculadora"
+    datos: {
+      precio: 100
+    }
+  ) {
+    nombre
+    precio
+    foto
+  }
+}
